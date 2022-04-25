@@ -1,0 +1,59 @@
+<div class="wrapper">
+  <h2>
+    Data Security in Web Application
+  </h2>
+  <h3>
+    (Using Crypto and Loop Encoding Techniques)
+  </h3>
+
+  <div class="row border-top">
+    <div class="title">Input Data: </div>
+    <div class="content">
+      <textarea type="text"  [(ngModel)]="inputData"></textarea>
+    </div>
+    <div class="btn">
+      <button (click)='encodeData()'>Encode Input Data</button>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="title">Encoded Data: </div>
+    <div class="content">
+      <p>{{encodedData}}</p>
+    </div>
+    <div class="btn">
+      <button (click)='encryptData()'>Encrypt Data</button>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="title">Encrypted Data: </div>
+    <div class="content">
+      <p>{{encryptedData}}</p>
+    </div>
+    <div class="btn">
+      <button (click)='decryptData()'>Decrypt Data</button>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="title">Decrypted Data: </div>
+    <div class="content">
+      <p>{{decryptedData}}</p>
+    </div>
+    <div class="btn">
+      <button (click)='decodeData()'>Decode Data</button>
+    </div>
+  </div>
+
+  <div class="row  no-border-bottom">
+    <div class="title">Decoded Data: </div>
+    <div class="content">
+      <p>{{decodedData}}</p>
+    </div>
+    <div class="btn">
+      <button (click)='resetData()'>Reset Data</button>
+    </div>
+  </div>
+
+</div>

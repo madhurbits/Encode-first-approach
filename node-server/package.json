@@ -1,0 +1,24 @@
+{
+  "name": "ng-integration",
+  "version": "1.0.0",
+  "description": "ng and node integration",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "buildclient": "cd client && ng build",
+    "start": "nodemon server.js",
+    "devstart": "nodemon --inspect ./bin/www",
+    "dev": "npm run buildclient & concurrently --kill-others \"npm run runclient\" \"npm run devstart\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "cors": "^2.8.5",
+    "cryptr": "^6.0.3",
+    "express": "^4.17.3",
+    "nodejs-base64-converter": "^1.0.5",
+    "nodemon": "^2.0.15",
+    "path": "^0.12.7"
+  }
+}
